@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "electronics_trade"
+version = "0.1.0"
+description = "Django project of a network for the sale of electronics"
+authors = ["dalbezh <dalbezh@icloud.com>"]
+readme = "README.md"
+packages = [{include = "electronics_trade"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "3.2.20"
+djangorestframework = "^3.14.0"
+django-filter = "^23.2"
+markdown = "^3.4.3"
+psycopg2-binary = "2.9.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
