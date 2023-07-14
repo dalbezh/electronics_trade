@@ -1,0 +1,17 @@
+[
+    {
+        "model": "orgs.organization",
+        "fields": {
+            "id": 1,
+            "name": "",
+            "email": "2500",
+            "country": "Russia",
+            "city": "",
+            "street": "",
+            "building": "",
+            "organization_form": 1,
+            "created": 2020:19:21,
+        }
+    }
+  }
+]
