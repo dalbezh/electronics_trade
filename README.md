@@ -37,7 +37,7 @@ python3 electronics_trade/manage.py runserver
 ```
 ___
 ### Структура приложения
-Доступ к самому API реализуется через Basic Auth. Для 
+Доступ к самому API реализуется через Basic Auth. 
 
 По URL приложения:
 

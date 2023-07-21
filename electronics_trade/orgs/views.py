@@ -3,7 +3,7 @@ from rest_framework.generics import ListAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.viewsets import ModelViewSet
 
 from orgs.serializers import OrganizationListSerializer, OrganizationSerializer, ProductSerializer, ProviderSerializer
-from orgs.models import Organization, Product, ProviderOrganization
+from orgs.models import Organization, Product
 
 
 class OrganizationListView(ListAPIView):
