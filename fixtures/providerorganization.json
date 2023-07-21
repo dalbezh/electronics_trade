@@ -1,0 +1,29 @@
+[
+    {
+        "model": "orgs.providerorganization",
+        "fields": {
+            "id": 1,
+            "debt": 6000.15,
+            "provider_id": 3,
+            "seller_id": 2
+        }
+    },
+    {
+        "model": "orgs.providerorganization",
+        "fields": {
+            "id": 2,
+            "debt": 7543654.33,
+            "provider_id": 1,
+            "seller_id": 5
+        }
+    },
+    {
+        "model": "orgs.providerorganization",
+        "fields": {
+            "id": 3,
+            "debt": 324.54,
+            "provider_id": 4,
+            "seller_id": 6
+        }
+    }
+]

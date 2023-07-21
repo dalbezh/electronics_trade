@@ -3,15 +3,84 @@
         "model": "orgs.organization",
         "fields": {
             "id": 1,
-            "name": "",
-            "email": "2500",
-            "country": "Russia",
-            "city": "",
-            "street": "",
-            "building": "",
+            "name": "ПАО Микроэлектрончик",
+            "email": "buy@microel.ru",
+            "country": "РФ",
+            "city": "Ярославль",
+            "street": "Оружейная ул.",
+            "building": "22/123",
+            "organization_form": 0,
+            "created": "2020-07-05 12:10:16.332479+03:00"
+        }
+    },
+    {
+        "model": "orgs.organization",
+        "fields": {
+            "id": 2,
+            "name": "Villagelink",
+            "email": "info@villagelink.rb",
+            "country": "РБ",
+            "city": "Минск",
+            "street": "Свободы ул.",
+            "building": "66",
             "organization_form": 1,
-            "created": 2020:19:21,
+            "created": "2021-02-03 12:10:16.332479+03:01"
+        }
+    },
+    {
+        "model": "orgs.organization",
+        "fields": {
+            "id": 3,
+            "name": "Wistron Corporation",
+            "email": "ftc@wistron.tw",
+            "country": "Китайская Республика",
+            "city": "Тайбэй",
+            "street": "Zhongxiao E Rd",
+            "building": "143",
+            "organization_form": 0,
+            "created": "2022-02-03 12:10:16.332479+03:02"
+        }
+    },
+    {
+        "model": "orgs.organization",
+        "fields": {
+            "id": 4,
+            "name": "М.Аудио",
+            "email": "24@maudio.ru",
+            "country": "РФ",
+            "city": "Москва",
+            "street": "Пресненская наб.",
+            "building": "10",
+            "organization_form": 1,
+            "created": "2023-01-02 12:10:16.332479+03:03"
+        }
+    },
+    {
+        "model": "orgs.organization",
+        "fields": {
+            "id": 5,
+            "name": "ИП Агузарова Жанна Хасановна",
+            "email": "zhanna@mars.ru",
+            "country": "РФ",
+            "city": "Москва",
+            "street": "Тверская ул.",
+            "building": "12",
+            "organization_form": 2,
+            "created": "2019-12-14 12:10:16.332479+03:04"
+        }
+    },
+    {
+        "model": "orgs.organization",
+        "fields": {
+            "id": 6,
+            "name": "ИП Иванов Иван Иванович",
+            "email": "iiivanov@techpekh.ru",
+            "country": "РФ",
+            "city": "Воронеж",
+            "street": "Ленинградская ул.",
+            "building": "13/Б",
+            "organization_form": 2,
+            "created": "2021-10-15 12:10:16.332479+03:05"
         }
     }
-  }
 ]

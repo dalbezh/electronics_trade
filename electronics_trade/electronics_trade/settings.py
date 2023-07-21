@@ -49,7 +49,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'orgs'
+    'rest_framework',
+    'orgs',
+    'users',
+    'drf_spectacular'
 ]
 
 MIDDLEWARE = [
@@ -133,3 +136,28 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Pagination
+TOTAL_ON_PAGE = 2
+
+# Main User model
+AUTH_USER_MODEL = 'users.User'
+
+# DRF  # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'electronics_trade.pagination.CustomPagination',
+    'PAGE_SIZE': 5,
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+
+# Настройки Swagger
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'ElectronicTrade API',
+    'DESCRIPTION': 'Модель сети по продаже электроники',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}
