@@ -41,8 +41,8 @@ class ProviderOrganizationAdmin(admin.ModelAdmin):
     list_display_links = ("provider", )
     list_select_related = True
     search_fields = ("provider", "seller")
-    actions = ["delete_debt"]
+    actions = ["flush_debt"]
 
     @admin.action(description="Отчистить задолженность")
-    def delete_debt(self, request, queryset):
+    def flush_debt(self, request, queryset):
         queryset.update(debt=0.0)
