@@ -117,10 +117,11 @@ class ProviderCreateSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         products = validated_data.pop('products', [])
-        instance = Organization.objects.create(**validated_data)
-        ProviderOrganization.objects.create(provider_id=instance.id)
-        for product in products:
-            instance.products.add(product)
+        with transaction.atomic():
+            instance = Organization.objects.create(**validated_data)
+            ProviderOrganization.objects.create_or_update(provider_id=instance.id)
+            for product in products:
+                instance.products.add(product)
         return instance
 
     class Meta:
