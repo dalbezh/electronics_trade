@@ -8,7 +8,6 @@ class ProductSerializer(serializers.ModelSerializer):
     """
     Сериализатор для продукта.
     """
-
     class Meta:
         model = Product
         fields = '__all__'
@@ -54,7 +53,6 @@ class OrganizationCreateSerializer(serializers.ModelSerializer):
     """
     Сериализатор для создания организаций
     """
-
     email = serializers.EmailField()
     debt_to = DebtToSerializer(many=True, required=False)
     organization_form = serializers.ChoiceField(
@@ -114,7 +112,6 @@ class ProviderCreateSerializer(serializers.ModelSerializer):
     """
     Сериализатор для создания организаций поставщиков
     """
-
     def create(self, validated_data):
         products = validated_data.pop('products', [])
         with transaction.atomic():
